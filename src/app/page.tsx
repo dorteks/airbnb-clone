@@ -1,11 +1,13 @@
 import React from "react";
-import Image from "next/image";
 import RootLayout from "./layout";
+import PriceDisplay from "@/components/homePage/priceDisplay";
+import AirbnbLists from "@/components/homePage/airbnbLists";
 
 const HomePage = () => {
   return (
     <RootLayout>
-      <h1>Home page goes here</h1>
+      <PriceDisplay />
+      <AirbnbLists />
     </RootLayout>
   );
 };

@@ -15,9 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Navbar />
-      <body className="font-[cereal-normal] w-full absolute  top-[155px] md:top-[181px] px-6 md:px-10 2xl:px-20">
+      <body className="font-[cereal-normal] w-full absolute top-[155px] md:top-[181px] pb-20 px-6 md:px-10 2xl:px-20">
         {children}
       </body>
+
       <Footer />
     </html>
   );
