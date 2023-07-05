@@ -2,7 +2,7 @@ import React from "react";
 
 const Desktop = () => {
   return (
-    <div className="h-[49px] border-t-[1px] border-[#dddddd] py-3 px-10 xl:px-20 2xl:px-24 hidden md:flex flex-row items-center md:justify-center lg:justify-between flex-wrap gap-10 text-[#222222] text-sm">
+    <div className="h-[49px] border-t-[1px] border-[#dddddd] py-3 px-10 xl:px-20 2xl:px-20 hidden md:flex flex-row items-center md:justify-center lg:justify-between flex-wrap gap-10 text-[#222222] text-sm">
       <div className="flex font-light gap-4 ">
         <span>&copy; 2023 Airbnb, Inc.</span>
 

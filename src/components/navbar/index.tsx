@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className="w-full fixed top-0 ">
-      <div className="border-b-[1px] border-[#ededed] ">
+    <div className="w-full fixed top-0">
+      <div className="border-none sm:border-b-[1px] border-[#ededed] ">
         {/* mobile nav bar */}
-        <div className="w-full mx-auto px-6 h-[80px] flex sm:hidden items-center justify-between">
-          <div className="w-full h-12 flex items-center justify-between text-sm font-extrabold rounded-[40px] border-[1px] border-[#ededed] pl-[16px] pr-[10px] ">
+        <div className="w-full mx-auto px-6 h-[70px] flex md:hidden pt-[14px] justify-between">
+          <div className="w-full h-[54px] flex items-center justify-between text-sm font-extrabold rounded-[40px] border-[1px] border-[#ededed] pl-[16px] pr-[10px] ">
             {/* search button */}
             <div className="flex items-center">
               <svg
@@ -52,8 +52,8 @@ const Navbar = () => {
         </div>
 
         {/* <div className="w-full mx-auto max-w-[1320px] px-6 sm:px-10 xl:px-0 h-[80px] flex items-center justify-between"> */}
-        <div className="w-full mx-auto px-6 sm:px-10 2xl:px-24 h-[80px] hidden sm:flex items-center justify-between">
-          <div className="flex items-center md:gap-8 md:justify-start lg:gap-48 xl:gap-96 2xl:gap-[575px] lg:justify-between ">
+        <div className="w-full mx-auto px-6 md:px-10 2xl:px-20 h-[80px] hidden md:flex items-center justify-between">
+          <div className="flex items-center md:gap-8 md:justify-start lg:gap-36 xl:gap-96 2xl:gap-[575px] lg:justify-between ">
             {/* needed to group airbnb and anywhere together */}
             <div className="hidden md:flex gap-[6px] items-center ">
               <Image
@@ -141,10 +141,10 @@ const Navbar = () => {
       </div>
 
       {/* <div className="flex w-full mx-auto max-w-[1320px] px-6 sm:px-10 xl:px-0 gap-5"> */}
-      <div className="flex w-full mx-auto px-6 sm:px-10 2xl:px-24 items-center gap-5">
-        <div className="overflow-hidden h-[78px] top-[80px] flex items-center gap-[36px]">
-          <h1>A</h1>
-          <h1>A</h1>
+      <div className="flex w-full mx-auto px-6 md:px-10 2xl:px-20 items-center gap-5 border-b-[1px] md:border-none border-[#ededed]">
+        <div className="overflow-hidden mt-0 md:mt-5 h-[74px] md:h-[78px] top-[80px] flex items-center gap-[36px]">
+          <h1 className="hidden md:flex">A</h1>
+          <h1 className="hidden md:flex">A</h1>
           {[
             {
               id: 1,
@@ -249,12 +249,10 @@ const Navbar = () => {
           ].map((i) => (
             <div
               key={i.id}
-              className="flex flex-col items-center justify-center flex-grow cursor-pointer  "
+              className="flex flex-col items-center justify-center flex-grow cursor-pointer text-[#717171] hover:text-[#000000] py-0 md:py-[16px] border-b-[2px] border-[white] hover:border-[#ededed]  "
             >
               <Image src={""} alt="icon" width={24} height={24} />
-              <h4 className="text-xs font-medium text-[#717171] hover:text-[#000000] ">
-                {i.text}
-              </h4>
+              <h4 className="text-xs font-medium">{i.text}</h4>
             </div>
           ))}
         </div>
