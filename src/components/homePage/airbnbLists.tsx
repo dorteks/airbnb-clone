@@ -1,4 +1,5 @@
 import React from "react";
+import ImageSlider from "./slider";
 
 const AirbnbLists = () => {
   return (
@@ -6,6 +7,13 @@ const AirbnbLists = () => {
       {[
         {
           id: 1,
+          images: [
+            "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
+            "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
+            "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
+            "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
+            "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
+          ],
           imgSrc:
             "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
           hostSrc:
@@ -359,10 +367,10 @@ const AirbnbLists = () => {
           key={i.id}
           className="w-full sm:w-[auto] max-w-[370px] h-[auto] flex flex-col mb-[16px]"
         >
-          <div className="relative mb-3 max-h-[460px]  ">
+          <div className="relative mb-3 max-h-[460px]">
             <div className="absolute w-full h-full flex items-center justify-between px-3 my-auto ">
               {/* left arrow */}
-              <div className="bg-white left-2 flex h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full  ">
+              <div className="bg-white relative h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full  ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 32 32"
@@ -379,7 +387,7 @@ const AirbnbLists = () => {
               </div>
 
               {/* right arrow */}
-              <div className="bg-white flex h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full  ">
+              <div className="bg-white relative flex h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full  ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 32 32"
@@ -394,6 +402,33 @@ const AirbnbLists = () => {
                   ></path>
                 </svg>
               </div>
+
+              {/* love/like */}
+              <div className="absolute right-[21px] top-[18px]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  className="block fill-[#00000080] h-6 w-6 stroke-[#FFFFFF] stroke-[2px] overflow-visible"
+                >
+                  <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
+                </svg>
+              </div>
+
+              {/* host */}
+              <div className="absolute w-full bottom-[1px] flex items-start justify-start px-6 ">
+                <img
+                  src={i.hostSrc}
+                  alt="host logo"
+                  className="h-[40px] w-[40px] mx-auto  rounded-full "
+                />
+                <div className="flex text-[#FFFFFF] font-bold">
+                  * * * * * * *
+                </div>
+                <span></span>
+              </div>
             </div>
 
             <img
@@ -401,29 +436,6 @@ const AirbnbLists = () => {
               src={i.imgSrc}
               className="rounded-[12px] min-h-[256px] max-h-[460px] bg-teal-200 "
             />
-            <div className="absolute right-[21px] top-[18px]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 32 32"
-                aria-hidden="true"
-                role="presentation"
-                focusable="false"
-                className="block fill-[#00000080] h-6 w-6 stroke-[#FFFFFF] stroke-[2px] overflow-visible"
-              >
-                <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
-              </svg>
-            </div>
-
-            <div className="absolute w-full bottom-[1px] flex items-center justify-center gap-10 px-6 ">
-              {/* <div className="flex 2xl:hidden mx-auto w-[70px] py-[22px] rounded-r-lg bg-[#FFFFFF] ">
-              <img
-                src={i.hostSrc}
-                alt="host logo"
-                className="h-[40px] w-[40px] mx-auto  rounded-full "
-              />
-            </div> */}
-              <div className="flex text-[#FFFFFF] font-bold">* * * * * * *</div>
-            </div>
           </div>
           <div className="text-[15px] text-[#222222]">
             <p className="flex items-center justify-between text-ellipsis overflow-clip font-semibold">
@@ -460,6 +472,8 @@ const AirbnbLists = () => {
           </div>
         </div>
       ))}
+
+      <ImageSlider />
     </div>
   );
 };

@@ -2,9 +2,10 @@ import React from "react";
 
 const FilterLists = () => {
   return (
-    <div className="relative z-20 bg-white flex w-full mx-auto px-6 md:px-10 2xl:px-20 items-center gap-2 border-b-[1px] border-[#ededed]">
+    <div className="relative z-20 bg-white flex w-full mx-auto px-6 md:px-10 2xl:px-20 items-center gap-2 cursor-pointer ">
+      {/* border-b-[1px] border-[#ededed] */}
       <div className="overflow-x-scroll md:overflow-hidden mt-0 md:mt-5 h-[74px] md:h-[78px] top-[80px] flex items-center gap-[34px]">
-        <div className="absolute left-2 hidden md:flex h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full  ">
+        <div className="absolute left-2 hidden md:flex h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full shadow-lg shadow-[inherit] hover:shadow-[#202020]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 32 32"
@@ -121,7 +122,7 @@ const FilterLists = () => {
         ].map((i) => (
           <div
             key={i.id}
-            className="flex flex-wrap gap-[8px] flex-grow items-center justify-center cursor-pointer text-[#717171] hover:text-[#000000] py-0 md:py-[16px] border-b-[2px] border-[white] hover:border-[#ededed]  "
+            className="flex flex-wrap gap-[8px] flex-grow items-center justify-center cursor-pointer text-[#717171] hover:text-[#000000] py-0 md:py-[16px] border-b-[5px] border-[white] hover:border-[#00000049]"
           >
             <img alt="icon" width={24} height={24} src={i.icon} className="" />
             <h4 className="text-center text-xs font-medium  whitespace-nowrap ">
@@ -130,7 +131,7 @@ const FilterLists = () => {
           </div>
         ))}
       </div>
-      <div className="mt-4 hidden md:flex h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full  ">
+      <div className="mt-4 hidden md:flex h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full shadow-lg shadow-[inherit] hover:shadow-[#202020]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 32 32"

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const PriceDisplay = () => {
   const [hasNavigated, setHasNavigated] = useState(false);
@@ -30,26 +30,32 @@ const PriceDisplay = () => {
           <p className="text-[#222222] font-bold ">Display total price</p>
           <p className="text-[#717171] ">includes all fees, before taxes</p>
         </div>
-        <button className="relative rounded-full w-[52px] h-8 border-[2px] flex items-center justify-center ">
+        <button
+          className={`${
+            ONIsNavigated
+              ? "relative bg-[#717171] rounded-full w-[52px] h-8 border-[2px] flex items-center justify-center"
+              : "relative bg-black rounded-full w-[52px] h-8 border-[2px] flex items-center justify-center "
+          }`}
+        >
           <div
             onClick={handleONNavigation}
             className={`${
               ONIsNavigated
-                ? "w-[15px] ml-[2px] bg-white text-white rounded-full px-3 absolute left-0 z-20"
-                : "w-[15px] ml-[2px] bg-[#717171] text-[#717171] rounded-full px-3 absolute left-0 z-20"
+                ? "w-[15px] ml-[3px] bg-white text-white rounded-full px-3 absolute left-0 z-20"
+                : "w-[15px] ml-[3px] bg-[#222222]  text-[#222222] rounded-full px-3 absolute left-0"
             }`}
           >
-            A
+            1
           </div>
           <div
             onClick={handleOFFNavigation}
             className={`${
-              OFFIsNavigated
-                ? "w-[15px] mr-[2px] bg-white text-white rounded-full px-3 absolute right-0"
-                : "w-[15px] mr-[2px] bg-[#717171] text-[#717171] rounded-full px-3 absolute right-0 z-20"
+              ONIsNavigated
+                ? "w-[15px] mr-[3px] bg-[#717171]  text-[#717171] rounded-full px-3 absolute right-0 "
+                : "w-[15px] mr-[3px] bg-white text-[#717171] rounded-full px-3 absolute right-0 z-20"
             }`}
           >
-            B
+            <div className="relative -left-1 ">%</div>
           </div>
         </button>
       </div>

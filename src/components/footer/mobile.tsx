@@ -2,8 +2,8 @@ import React from "react";
 
 const Mobile = () => {
   return (
-    <div className="flex flex-col gap-8">
-      <div className="flex md:hidden self-center text-[#FFFFFF] bg-[#000000] w-auto rounded-full">
+    <div className="flex flex-col gap-9">
+      <div className="flex absolute bottom-24 md:hidden self-center text-[#FFFFFF] bg-[#000000] w-auto rounded-full">
         <button className="flex gap-2 items-center justify-center px-5 py-[11px] text-xs font-semibold ">
           Map
           <svg
@@ -18,7 +18,8 @@ const Mobile = () => {
           </svg>
         </button>
       </div>
-      <div className="border-t-[1px] border-[#ebebeb] h-[64px] py-3 px-10 flex md:hidden items-center justify-center gap-16 sm:gap-28 ">
+
+      <div className="relative bg-white z-20  border-t-[1px] border-[#ebebeb] h-[64px] py-3 px-10 flex md:hidden items-center justify-center gap-16 sm:gap-28 ">
         {[
           {
             id: 1,
