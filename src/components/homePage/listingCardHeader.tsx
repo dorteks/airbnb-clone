@@ -2,6 +2,11 @@
 
 import React, { useState } from "react";
 
+type Props = {
+  imgSrc: string;
+  hostSrc: string;
+};
+
 const images = [
   "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
   "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
@@ -10,14 +15,16 @@ const images = [
   "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
 ];
 
-const ImageSlider = () => {
-  const [imgIndex, setImgIndex] = useState(0);
-
+const ListingHeader = (props: Props) => {
+  // logic for handling like and unlike
   const [like, setLike] = useState(false);
 
   const toggleLikeAndUnlike = () => {
     setLike(!like);
   };
+
+  // logic for switching images on listing card
+  const [imgIndex, setImgIndex] = useState(0);
 
   const handleClickNextBtn = () => {
     setImgIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -26,16 +33,16 @@ const ImageSlider = () => {
 
   const handleClickPrevBtn = () => {
     setImgIndex((prevIndex) => (prevIndex + 1) % images.length);
-    console.log("clicked Next");
+    console.log("clicked Prev");
   };
 
   return (
-    <div className="relative items-center justify-center gap-4 w-full sm:w-[auto] max-w-[370px] h-[auto] flex flex-col mb-[16px] mt-5 cursor-pointer">
-      <div className="absolute flex items-center justify-center">
-        {/* prev button */}
+    <div className="relative mb-3 max-h-[460px]">
+      <div className="absolute w-full h-full flex items-center justify-center px-3 my-auto ">
+        {/* left arrow */}
         <div
           onClick={handleClickPrevBtn}
-          className="bg-white absolute z-20 left-2 h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full  "
+          className="bg-white absolute left-4 h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full  "
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -49,12 +56,22 @@ const ImageSlider = () => {
           </svg>
         </div>
 
-        {/* bg picture */}
-        <img
-          alt=""
-          src={images[imgIndex]}
-          className="rounded-[12px] left-0 w-full min-h-[256px] max-h-[460px]"
-        />
+        {/* right arrow */}
+        <div
+          onClick={handleClickNextBtn}
+          className="bg-white absolute right-4 flex h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full  "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            aria-hidden="true"
+            role="presentation"
+            focusable="false"
+            className="block fill-none h-3 w-3 stroke-[#222222] stroke-[2px] overflow-visible"
+          >
+            <path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path>
+          </svg>
+        </div>
 
         {/* love/like */}
         <div
@@ -89,37 +106,25 @@ const ImageSlider = () => {
         {/* host */}
         <div className="absolute left-3 bottom-3 w-[64px] h-[72px] bg-white flex items-center justify-center rounded-r-xl ">
           <img
-            src={
-              "https://a0.muscache.com/im/pictures/user/b9c551db-9203-4f2c-9572-216ebe07e25c.jpg?im_w=240"
-            }
+            src={props.hostSrc}
             alt="host logo"
             className="h-[40px] w-[40px] bg-red-500 rounded-full "
           />
         </div>
 
-        <div className="absolute bottom-0 flex text-white font-bold">
-          <h1>* * * * * * *</h1>
-        </div>
-
-        {/* next button */}
-        <div
-          onClick={handleClickNextBtn}
-          className="bg-white absolute right-2 flex h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full  "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            aria-hidden="true"
-            role="presentation"
-            focusable="false"
-            className="block fill-none h-3 w-3 stroke-[#222222] stroke-[2px] overflow-visible"
-          >
-            <path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path>
-          </svg>
+        <div className="absolute bottom-0 text-white font-bold">
+          <h1>* * * * * *</h1>
         </div>
       </div>
+
+      <img
+        alt=""
+        src={props.imgSrc}
+        // src={images[imgIndex]}
+        className="rounded-[12px] min-h-[256px] max-h-[460px] bg-teal-200 "
+      />
     </div>
   );
 };
 
-export default ImageSlider;
+export default ListingHeader;

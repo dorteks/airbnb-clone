@@ -1,23 +1,34 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
 
 const FilterLists = () => {
-  return (
-    <div className="relative z-20 bg-white flex w-full mx-auto px-6 md:px-10 2xl:px-20 items-center gap-2 cursor-pointer ">
-      {/* border-b-[1px] border-[#ededed] */}
-      <div className="overflow-x-scroll md:overflow-hidden mt-0 md:mt-5 h-[74px] md:h-[78px] top-[80px] flex items-center gap-[34px]">
-        <div className="absolute left-2 hidden md:flex h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full shadow-lg shadow-[inherit] hover:shadow-[#202020]">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            aria-hidden="true"
-            role="presentation"
-            focusable="false"
-            className="block fill-none h-3 w-3 stroke-[#222222] stroke-[2px] overflow-visible"
-          >
-            <path fill="none" d="M20 28 8.7 16.7a1 1 0 0 1 0-1.4L20 4"></path>
-          </svg>
-        </div>
+  const filterRef = useRef<HTMLDivElement | null>(null);
 
+  const handlePrev = () => {
+    filterRef.current?.scrollBy({
+      left: -filterRef.current?.offsetWidth,
+      behavior: "smooth",
+    });
+    console.log("prev clicked");
+  };
+
+  const handleNext = () => {
+    filterRef.current?.scrollBy({
+      left: filterRef.current?.offsetWidth,
+      behavior: "smooth",
+    });
+    console.log("next clicked");
+  };
+
+  return (
+    <div className="relative bg-white flex w-full mx-auto px-6 md:px-10 2xl:px-20 items-center gap-2 cursor-pointer ">
+      {/* border-b-[1px] border-[#ededed] */}
+      <div
+        ref={filterRef}
+        style={{ transform: "translateX(0)" }}
+        className="overflow-x-scroll md:overflow-hidden mt-0 md:mt-5 h-[74px] md:h-[78px] top-[80px] flex items-center gap-[34px]"
+      >
         {[
           {
             id: 1,
@@ -122,6 +133,7 @@ const FilterLists = () => {
         ].map((i) => (
           <div
             key={i.id}
+            onClick={() => console.log("Clicked")}
             className="flex flex-wrap gap-[8px] flex-grow items-center justify-center cursor-pointer text-[#717171] hover:text-[#000000] py-0 md:py-[16px] border-b-[5px] border-[white] hover:border-[#00000049]"
           >
             <img alt="icon" width={24} height={24} src={i.icon} className="" />
@@ -131,7 +143,13 @@ const FilterLists = () => {
           </div>
         ))}
       </div>
-      <div className="mt-4 hidden md:flex h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full shadow-lg shadow-[inherit] hover:shadow-[#202020]">
+
+      {/* next button*/}
+      <div
+        onClick={handleNext}
+        // disabled={handleNext === null}
+        className="mt-4 hidden md:flex h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full shadow-lg shadow-[inherit] hover:shadow-[#202020]"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 32 32"
@@ -143,6 +161,25 @@ const FilterLists = () => {
           <path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path>
         </svg>
       </div>
+
+      {/* prev button */}
+      <div
+        onClick={handlePrev}
+        // disabled={handlePrev === null}
+        className="mt-4 hidden md:flex h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full shadow-lg shadow-[inherit] hover:shadow-[#202020]"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+          aria-hidden="true"
+          role="presentation"
+          focusable="false"
+          className="block fill-none h-3 w-3 stroke-[#222222] stroke-[2px] overflow-visible"
+        >
+          <path fill="none" d="M20 28 8.7 16.7a1 1 0 0 1 0-1.4L20 4"></path>
+        </svg>
+      </div>
+
       <button className="hidden md:flex py-2 min-w-[91px] h-[48px] mt-4 items-center bg-[#00000000] border-[1px] border-[#dddddd] rounded-[12px] text-xs font-extrabold ">
         <div className="flex px-4 py-[1px] gap-2">
           <svg
