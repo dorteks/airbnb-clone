@@ -59,7 +59,7 @@ const ImageSlider = () => {
         {/* love/like */}
         <div
           onClick={toggleLikeAndUnlike}
-          className="absolute right-[15px] top-[32px]"
+          className="absolute right-[20px] top-[20px]"
         >
           {!like ? (
             <svg
@@ -84,6 +84,21 @@ const ImageSlider = () => {
               <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
             </svg>
           )}
+        </div>
+
+        {/* host */}
+        <div className="absolute left-3 bottom-3 w-[64px] h-[72px] bg-white flex items-center justify-center rounded-r-xl ">
+          <img
+            src={
+              "https://a0.muscache.com/im/pictures/user/b9c551db-9203-4f2c-9572-216ebe07e25c.jpg?im_w=240"
+            }
+            alt="host logo"
+            className="h-[40px] w-[40px] bg-red-500 rounded-full "
+          />
+        </div>
+
+        <div className="absolute bottom-0 flex text-white font-bold">
+          <h1>* * * * * * *</h1>
         </div>
 
         {/* next button */}
