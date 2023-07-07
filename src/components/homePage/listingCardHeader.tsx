@@ -108,7 +108,7 @@ const ListingHeader = (props: Props) => {
           <img
             src={props.hostSrc}
             alt="host logo"
-            className="h-[40px] w-[40px] bg-red-500 rounded-full "
+            className="h-[40px] w-[40px] rounded-full "
           />
         </div>
 

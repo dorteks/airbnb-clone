@@ -16,10 +16,12 @@ const AirbnbLists = () => {
           <ListingCardText
             location={i.location}
             rating={i.rating}
-            number={i.number}
+            hostName={i.hostName}
+            nights={i.nights}
             dateFrom={i.dateFrom}
             dateTo={i.dateTo}
             price={i.price}
+            occupation={i.occupation}
           />
         </div>
       ))}
