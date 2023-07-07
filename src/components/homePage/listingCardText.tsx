@@ -14,8 +14,8 @@ type Props = {
 const ListingCardText = (props: Props) => {
   return (
     <div className="text-[15px] text-[#222222]">
-      <p className="flex items-center justify-between text-ellipsis overflow-clip font-semibold">
-        {props.location}{" "}
+      <div className="flex items-center justify-between font-semibold">
+        <p className="truncate">{props.location} </p>
         <span className="flex items-center gap-1 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -32,18 +32,20 @@ const ListingCardText = (props: Props) => {
           </svg>{" "}
           {props.rating}
         </span>
-      </p>
+      </div>
       <div className="flex flex-col leading-[21px] ">
         <p className="flex flex-wrap overflow-hidden text-ellipsis text-[#717171]">
-          Stay with {props.hostName} *
-          <span className="ml-1">{props.occupation}</span>
+          Stay with {props.hostName}
+          <li className="ml-2  list-disc">
+            <span className="-ml-2  ">{props.occupation} </span>{" "}
+          </li>
         </p>
         <p className="overflow-clip text-[#717171]">
           {props.nights} nights * {props.dateFrom} - {props.dateTo}
         </p>
       </div>
       <p className="mt-[6px] font-semibold  ">
-        # {props.price} <span className="font-normal">night</span>{" "}
+        $ {props.price} <span className="font-normal">night</span>{" "}
       </p>
     </div>
   );
