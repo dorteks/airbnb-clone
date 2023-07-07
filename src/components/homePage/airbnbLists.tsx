@@ -6,7 +6,7 @@ import { ListingCardData } from "../mockData/listingCardData";
 
 const AirbnbLists = () => {
   return (
-    <div className="grid items-center justify-between gap-[18px] 2xl:gap-5 2xl:grid-rows-3 sm:grid-cols-2  lg:grid-cols-3  xl:grid-cols-4  2xl:grid-cols-5 3xl:grid-cols-6 cursor-pointer ">
+    <div className="grid items-center justify-between gap-[18px] 2xl:gap-5 2xl:grid-rows-3 sm:grid-cols-2  lg:grid-cols-3  xl:grid-cols-4  2xl:grid-cols-5 3xl:grid-cols-6">
       {ListingCardData.map((i) => (
         <div
           key={i.id}

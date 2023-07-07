@@ -22,12 +22,12 @@ const FilterLists = () => {
   };
 
   return (
-    <div className="relative bg-white flex w-full mx-auto px-6 md:px-10 2xl:px-20 items-center gap-2 cursor-pointer ">
+    <div className="relative bg-white flex w-full mx-auto px-6 md:px-10 2xl:px-20 items-center gap-2 border-white border-[1px] border-b-[#ededed] md:border-none cursor-pointer ">
       {/* border-b-[1px] border-[#ededed] */}
       <div
         ref={filterRef}
         style={{ transform: "translateX(0)" }}
-        className="overflow-x-scroll md:overflow-hidden mt-0 md:mt-5 h-[74px] md:h-[78px] top-[80px] flex items-center gap-[34px]"
+        className="overflow-hidden mt-2 md:mt-5 h-[74px] md:h-[78px] top-[80px] flex items-center gap-[34px]"
       >
         {[
           {
@@ -134,10 +134,10 @@ const FilterLists = () => {
           <div
             key={i.id}
             onClick={() => console.log("Clicked")}
-            className="flex flex-wrap gap-[8px] flex-grow items-center justify-center cursor-pointer text-[#717171] hover:text-[#000000] py-0 md:py-[16px] border-b-[5px] border-[white] hover:border-[#00000049]"
+            className="flex flex-wrap gap-[8px] flex-grow items-center justify-center cursor-pointer text-[#717171] hover:text-[#000000] py-[13px] md:py-[16px] border-b-[10px]  sm:border-b-[5px] border-[white] hover:border-b-red-500 hover:sm:border-[#00000049]"
           >
             <img alt="icon" width={24} height={24} src={i.icon} className="" />
-            <h4 className="text-center text-xs font-medium  whitespace-nowrap ">
+            <h4 className="text-center text-xs font-medium whitespace-nowrap ">
               {i.text}
             </h4>
           </div>
