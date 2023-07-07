@@ -3,7 +3,9 @@ import React from "react";
 type Props = {
   location: string;
   rating: string;
-  number: string;
+  hostName: string;
+  occupation: string;
+  nights: string;
   dateFrom: string;
   dateTo: string;
   price: string;
@@ -33,15 +35,15 @@ const ListingCardText = (props: Props) => {
       </p>
       <div className="flex flex-col leading-[21px] ">
         <p className="flex flex-wrap overflow-hidden text-ellipsis text-[#717171]">
-          Viewed {props.number}
-          <span className="ml-1">times last week</span>
+          Stay with {props.hostName} *
+          <span className="ml-1">{props.occupation}</span>
         </p>
         <p className="overflow-clip text-[#717171]">
-          {props.dateFrom} - {props.dateTo}
+          {props.nights} nights * {props.dateFrom} - {props.dateTo}
         </p>
       </div>
       <p className="mt-[6px] font-semibold  ">
-        ${props.price} <span className="font-normal">night</span>{" "}
+        # {props.price} <span className="font-normal">night</span>{" "}
       </p>
     </div>
   );
