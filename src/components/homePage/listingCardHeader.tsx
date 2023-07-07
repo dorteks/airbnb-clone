@@ -38,11 +38,11 @@ const ListingHeader = (props: Props) => {
 
   return (
     <div className="relative mb-3 max-h-[460px]">
-      <div className="absolute w-full h-full flex items-center justify-center px-3 my-auto ">
+      <div className="absolute w-full h-full flex items-center justify-center px-3 my-auto cursor-pointer">
         {/* left arrow */}
         <div
           onClick={handleClickPrevBtn}
-          className="bg-white absolute left-4 h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full  "
+          className="bg-white absolute left-4 h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full cursor-pointer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ const ListingHeader = (props: Props) => {
         {/* right arrow */}
         <div
           onClick={handleClickNextBtn}
-          className="bg-white absolute right-4 flex h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full  "
+          className="bg-white absolute right-4 flex h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full cursor-pointer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ const ListingHeader = (props: Props) => {
         {/* love/like */}
         <div
           onClick={toggleLikeAndUnlike}
-          className="absolute right-[20px] top-[20px]"
+          className="absolute right-[20px] top-[20px] cursor-pointer"
         >
           {!like ? (
             <svg
@@ -104,15 +104,15 @@ const ListingHeader = (props: Props) => {
         </div>
 
         {/* host */}
-        <div className="absolute left-3 bottom-3 w-[64px] h-[72px] bg-white flex items-center justify-center rounded-r-xl ">
+        <div className="absolute left-3 bottom-3 w-[64px] h-[72px] bg-white flex items-center justify-center rounded-r-xl cursor-pointer">
           <img
             src={props.hostSrc}
             alt="host logo"
-            className="h-[40px] w-[40px] rounded-full "
+            className="h-[40px] w-[40px] rounded-full cursor-pointer"
           />
         </div>
 
-        <div className="absolute bottom-0 text-white font-bold">
+        <div className="absolute bottom-0 text-white font-bold cursor-pointer">
           <h1>* * * * * *</h1>
         </div>
       </div>
@@ -121,7 +121,7 @@ const ListingHeader = (props: Props) => {
         alt=""
         src={props.imgSrc}
         // src={images[imgIndex]}
-        className="rounded-[12px] min-h-[256px] max-h-[460px] bg-teal-200 "
+        className="rounded-[12px] min-h-[256px] max-h-[460px] cursor-pointer"
       />
     </div>
   );
