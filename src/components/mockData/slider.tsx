@@ -28,13 +28,13 @@ const Nimages = [
 ];
 
 const ImageSlider = () => {
-  const [imgIndex, setImgIndex] = useState(0);
-
   const [like, setLike] = useState(false);
 
   const toggleLikeAndUnlike = () => {
     setLike(!like);
   };
+
+  const [imgIndex, setImgIndex] = useState(0);
 
   const handleClickNextBtn = () => {
     setImgIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -46,8 +46,16 @@ const ImageSlider = () => {
     console.log("clicked Next");
   };
 
+  // paginstoin
+  const [currentPage, setCurrentPage] = useState(1);
+  const totalPages = 5;
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
+
   return (
-    <div className="relative items-center justify-center gap-4 w-full sm:w-[auto] max-w-[370px] h-[auto] mb-[16px] cursor-pointer">
+    <div className="relative items-center justify-center gap-4 w-full sm:w-[auto] max-w-[370px] h-[auto] mb-[376px] cursor-pointer">
       <div className="absolute flex items-center justify-center">
         {/* prev button */}
         <div
@@ -75,7 +83,7 @@ const ImageSlider = () => {
         />
 
         {/* love/like */}
-        <div
+        <button
           onClick={toggleLikeAndUnlike}
           className="absolute right-[20px] top-[20px]"
         >
@@ -102,7 +110,7 @@ const ImageSlider = () => {
               <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
             </svg>
           )}
-        </div>
+        </button>
 
         {/* host */}
         <div className="absolute left-3 bottom-3 w-[64px] h-[72px] bg-white flex items-center justify-center rounded-r-xl ">
@@ -116,7 +124,45 @@ const ImageSlider = () => {
         </div>
 
         <div className="absolute bottom-0 flex text-white font-bold">
-          <h1>* * * * * * *</h1>
+          <section className="mt-12 flex flex-row items-center justify-center gap-2">
+            <button
+              onClick={() => setCurrentPage((page) => page - 1)}
+              disabled={currentPage === 1}
+              className={`${
+                currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
+              }  hover:bg-gray-50 text-md sm:text-lg font-medium text-darkblue-500 flex flex-row items-center gap-2 py-2 px-4 rounded-l`}
+            >
+              <img src="/assets/arrow-narrow-left.svg" alt="previous" />
+              Previous
+            </button>
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+              <li key={page} className="list-none">
+                <button
+                  onClick={() => handlePageChange(page)}
+                  className={`${
+                    currentPage === page
+                      ? "bg-cyan1-100 hover:bg-cyan1-100 text-gray-800 hover:text-gray-900"
+                      : "bg-gray-50 text-gray-900 cursor-not-allowed"
+                  } text-lg sm:text-2xl font-medium px-0 py-0 sm:px-3 sm:py-2 md:px-5 md:py-3  `}
+                  disabled={currentPage === page}
+                >
+                  {page}
+                </button>
+              </li>
+            ))}
+            <button
+              onClick={() => setCurrentPage((page) => page + 1)}
+              disabled={currentPage === totalPages}
+              className={`${
+                currentPage === totalPages
+                  ? "opacity-50 cursor-not-allowed"
+                  : ""
+              }  hover:bg-gray-50 text-md sm:text-lg font-medium text-darkblue-500 flex flex-row items-center gap-1 py-2 px-4 rounded-r`}
+            >
+              Next
+              <img src="/assets/arrow-narrow-right.svg" alt="next" />
+            </button>
+          </section>{" "}
         </div>
 
         {/* next button */}

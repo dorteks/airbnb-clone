@@ -2,6 +2,7 @@ import React from "react";
 import ListingHeader from "./listingCardHeader";
 import ListingCardText from "./listingCardText";
 import { ListingCardData } from "../mockData/listingCardData";
+import ImageSlider from "../mockData/slider";
 
 const AirbnbLists = () => {
   return (
@@ -24,6 +25,7 @@ const AirbnbLists = () => {
           />
         </div>
       ))}
+      <ImageSlider />
     </div>
   );
 };
