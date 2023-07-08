@@ -24,7 +24,7 @@ const PriceDisplay = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center pt-[14px] py-3 mb-[13px]">
+    <div className="flex flex-col items-center justify-center pt-[14px] py-3 mb-[13px] tap-transparent">
       <div className="w-full lg:w-[690px] 2xl:w-[568px] p-4 flex items-center justify-between text-[15px] rounded-[12px] border-[1px] border-[#dddddd]">
         <div className="flex flex-col md:flex-row md:gap-4 leading-[18px] ">
           <p className="text-[#222222] font-bold ">Display total price</p>

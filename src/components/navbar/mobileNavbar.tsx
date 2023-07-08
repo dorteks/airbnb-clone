@@ -2,7 +2,7 @@ import React from "react";
 
 const MobileNavbar = () => {
   return (
-    <div className="relative z-20 bg-white w-full mx-auto px-6 h-[70px] flex md:hidden pt-[14px] justify-between">
+    <div className="relative z-20 bg-white w-full mx-auto px-6 h-[70px] flex md:hidden pt-[14px] justify-between tap-transparent">
       <div className="w-full h-[54px] flex items-center justify-between text-sm font-extrabold rounded-[40px] border-[1px] border-[#ededed] pl-[16px] pr-[10px] ">
         {/* search button */}
         <div className="flex items-center">

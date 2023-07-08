@@ -13,7 +13,7 @@ type Props = {
 
 const ListingCardText = (props: Props) => {
   return (
-    <div className="text-[15px] text-[#222222] cursor-pointer">
+    <div className="text-[15px] text-[#222222] cursor-pointer tap-transparent">
       <div className="flex items-center justify-between font-semibold">
         <p className="truncate">{props.location} </p>
         <span className="flex items-center gap-1 ">
