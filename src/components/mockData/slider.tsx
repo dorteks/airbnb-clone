@@ -47,7 +47,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="relative items-center justify-center gap-4 w-full sm:w-[auto] max-w-[370px] h-[auto] flex flex-col mb-[16px] mt-5 cursor-pointer">
+    <div className="relative items-center justify-center gap-4 w-full sm:w-[auto] max-w-[370px] h-[auto] mb-[16px] cursor-pointer">
       <div className="absolute flex items-center justify-center">
         {/* prev button */}
         <div
