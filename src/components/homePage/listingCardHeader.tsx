@@ -37,19 +37,19 @@ const ListingHeader = (props: Props) => {
   };
 
   return (
-    <div className="relative bg-inherit flex flex-col items-center justify-between bg-cover bg-center mb-3 min-h-[270px] max-h-[460px] cursor-pointer">
+    <div className="relative bg-inherit flex flex-col items-center justify-between bg-cover bg-center mb-3 min-h-[270px] max-h-[460px] cursor-pointer tap-transparent">
       {/* bg-image */}
       <img
         alt="bg-image"
         src={images[imgIndex]}
         // src={props.imgSrc}
-        className="w-full min-h-[270px] max-h-[460px] object-cover relative mix-blend-overlay rounded-[12px] tap-transparent"
+        className="w-full min-h-[270px] max-h-[460px] object-cover relative mix-blend-overlay rounded-[12px]"
       />
 
       {/* left arrow */}
       <div
         onClick={handleClickPrevBtn}
-        className="bg-white absolute top-1/2  left-3  h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full cursor-pointer"
+        className="bg-white absolute top-1/2  left-3  h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full cursor-pointer tap-transparent "
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ const ListingHeader = (props: Props) => {
       {/* right arrow */}
       <div
         onClick={handleClickNextBtn}
-        className="bg-white absolute top-1/2  right-3 h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full cursor-pointer"
+        className="bg-white absolute top-1/2  right-3 h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full cursor-pointer tap-transparent"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ const ListingHeader = (props: Props) => {
       {/* love/like */}
       <div
         onClick={toggleLikeAndUnlike}
-        className="absolute top-5 right-5 self-end cursor-pointer"
+        className="absolute top-5 right-5 self-end cursor-pointer  tap-transparent"
       >
         {!like ? (
           <svg
@@ -111,7 +111,7 @@ const ListingHeader = (props: Props) => {
       </div>
 
       {/* host */}
-      <div className="absolute left-5 bottom-4  w-[64px] h-[72px] bg-white flex items-center justify-center rounded-r-xl cursor-pointer">
+      <div className="absolute left-5 bottom-4  w-[64px] h-[72px] bg-white flex items-center justify-center rounded-r-xl cursor-pointer  tap-transparent">
         <img
           src={props.hostSrc}
           alt="host logo"
@@ -119,7 +119,7 @@ const ListingHeader = (props: Props) => {
         />
       </div>
 
-      <div className="absolute bottom-2 text-white font-bold cursor-pointer">
+      <div className="absolute bottom-2 text-white font-bold cursor-pointer  tap-transparent">
         <h1>* * * * *</h1>
       </div>
     </div>

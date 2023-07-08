@@ -22,7 +22,7 @@ const FilterLists = () => {
   };
 
   return (
-    <div className="relative bg-white flex w-full mx-auto px-6 md:px-10 2xl:px-20 items-center gap-2 border-white border-[1px] border-b-[#ededed] md:border-none cursor-pointer ">
+    <div className="relative bg-white flex w-full mx-auto px-6 md:px-10 2xl:px-20 items-center gap-2 border-white border-[1px] border-b-[#ededed] md:border-none cursor-pointer tap-transparent">
       {/* border-b-[1px] border-[#ededed] */}
       <div
         ref={filterRef}

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const DesktopNavbar = () => {
   return (
-    <div className="relative z-20 bg-white w-full mx-auto px-6 md:px-10 2xl:px-20 h-[80px] hidden md:flex items-center justify-between cursor-pointer border-b-[1px] border-[#0000006]   ">
+    <div className="relative z-20 bg-white w-full mx-auto px-6 md:px-10 2xl:px-20 h-[80px] hidden md:flex items-center justify-between cursor-pointer border-b-[1px] border-[#0000006] tap-transparent ">
       <div className="flex items-center md:gap-[19px] md:justify-start lg:gap-32 xl:gap-96 2xl:gap-[575px] lg:justify-between">
         {/* needed to group airbnb and anywhere together */}
         <div className="hidden md:flex gap-[6px] items-center">
