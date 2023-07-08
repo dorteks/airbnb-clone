@@ -28,13 +28,13 @@ const ListingHeader = (props: Props) => {
 
   const handleClickNextBtn = () => {
     setImgIndex((prevIndex) => (prevIndex + 1) % images.length);
-    console.log("clicked Next");
   };
 
   const handleClickPrevBtn = () => {
     setImgIndex((prevIndex) => (prevIndex + 1) % images.length);
-    console.log("clicked Prev");
   };
+
+  //logic for pagination
 
   return (
     <div className="relative bg-inherit flex flex-col items-center justify-between bg-cover bg-center mb-3 min-h-[270px] max-h-[460px] cursor-pointer tap-transparent">
@@ -120,7 +120,7 @@ const ListingHeader = (props: Props) => {
       </div>
 
       <div className="absolute bottom-2 text-white font-bold cursor-pointer  tap-transparent">
-        <h1>* * * * *</h1>
+        <div>* * * * *</div>
       </div>
     </div>
   );
