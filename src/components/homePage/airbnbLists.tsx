@@ -1,5 +1,4 @@
 import React from "react";
-import ImageSlider from "./slider";
 import ListingHeader from "./listingCardHeader";
 import ListingCardText from "./listingCardText";
 import { ListingCardData } from "../mockData/listingCardData";
@@ -10,7 +9,7 @@ const AirbnbLists = () => {
       {ListingCardData.map((i) => (
         <div
           key={i.id}
-          className="w-full sm:w-[auto] max-w-[370px] h-[auto] flex flex-col mb-[16px]"
+          className="w-[270px] max-w-[420px] sm:w-[auto] h-[auto] flex flex-col mb-[16px]"
         >
           <ListingHeader hostSrc={i.hostSrc} imgSrc={i.imgSrc} />
           <ListingCardText
@@ -25,7 +24,6 @@ const AirbnbLists = () => {
           />
         </div>
       ))}
-      <ImageSlider />
     </div>
   );
 };

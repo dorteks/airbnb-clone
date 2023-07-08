@@ -28,7 +28,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/homePage/slider.tsx"
+    "src/components/mockData/slider.tsx",
+    "src/components/homePage/header"
   ],
   "exclude": ["node_modules"]
 }

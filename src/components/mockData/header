@@ -2,11 +2,6 @@
 
 import React, { useState } from "react";
 
-type Props = {
-  imgSrc: string;
-  hostSrc: string;
-};
-
 const images = [
   "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
   "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
@@ -15,7 +10,7 @@ const images = [
   "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
 ];
 
-const ListingHeader = (props: Props) => {
+const Header = () => {
   // logic for handling like and unlike
   const [like, setLike] = useState(false);
 
@@ -39,10 +34,11 @@ const ListingHeader = (props: Props) => {
   return (
     <div className="relative bg-inherit flex flex-col items-center justify-between bg-cover bg-center mb-3 min-h-[270px] max-h-[460px] cursor-pointer">
       {/* bg-image */}
+
       <img
         alt="bg-image"
+        //   src={images[1][imgIndex]}
         src={images[imgIndex]}
-        // src={props.imgSrc}
         className="w-full min-h-[270px] max-h-[460px] object-cover relative mix-blend-overlay rounded-[12px] tap-transparent"
       />
 
@@ -113,7 +109,7 @@ const ListingHeader = (props: Props) => {
       {/* host */}
       <div className="absolute left-5 bottom-4  w-[64px] h-[72px] bg-white flex items-center justify-center rounded-r-xl cursor-pointer">
         <img
-          src={props.hostSrc}
+          src={""}
           alt="host logo"
           className="h-[40px] w-[40px] bg-inherit rounded-full cursor-pointer colo "
         />
@@ -126,4 +122,4 @@ const ListingHeader = (props: Props) => {
   );
 };
 
-export default ListingHeader;
+export default Header;
