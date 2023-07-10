@@ -24,8 +24,7 @@ const MobileNavbar = () => {
             <p className="text-sm text-[#222222]">Anywhere</p>
             <div className="flex font-thin gap-2 text-xs text-[#717171]">
               <p>Any week</p>
-              <p>*</p>
-              <p>Add guests</p>
+              <li className="list-disc">Add guests</li>
             </div>
           </div>
         </div>

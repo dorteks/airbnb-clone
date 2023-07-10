@@ -13,7 +13,7 @@ type Props = {
 
 const ListingCardText = (props: Props) => {
   return (
-    <div className="text-[15px] text-[#222222] cursor-pointer tap-transparent">
+    <div className="w-inherit text-[15px] text-[#222222] cursor-pointer tap-transparent">
       <div className="flex items-center justify-between font-semibold">
         <p className="truncate">{props.location} </p>
         <span className="flex items-center gap-1 ">
@@ -34,10 +34,10 @@ const ListingCardText = (props: Props) => {
         </span>
       </div>
       <div className="flex flex-col leading-[21px] ">
-        <p className="flex flex-wrap overflow-hidden text-ellipsis text-[#717171]">
+        <p className="flex flex-wrap overflow-hidden truncate text-[#717171]">
           Stay with {props.hostName}
           <li className="ml-2  list-disc">
-            <span className="-ml-2  ">{props.occupation} </span>{" "}
+            <span className="-ml-2">{props.occupation} </span>{" "}
           </li>
         </p>
         <p className="overflow-clip text-[#717171]">

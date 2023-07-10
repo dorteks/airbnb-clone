@@ -1,9 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
+import { MyGallery } from "../slider-library/reactImageGallery";
 
 type Props = {
-  imgSrc: string;
+  imgSrc: string | string[];
   hostSrc: string;
 };
 
@@ -31,7 +32,7 @@ const ListingHeader = (props: Props) => {
   };
 
   const handleClickPrevBtn = () => {
-    setImgIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setImgIndex((prevIndex) => (prevIndex - 1) % images.length);
   };
 
   //logic for pagination
@@ -41,15 +42,21 @@ const ListingHeader = (props: Props) => {
       {/* bg-image */}
       <img
         alt="bg-image"
-        src={images[imgIndex]}
-        // src={props.imgSrc}
+        src={props.imgSrc[imgIndex]}
+        // src={images[imgIndex]}
         className="w-full min-h-[270px] max-h-[460px] object-cover relative mix-blend-overlay rounded-[12px]"
       />
+
+      {/* <MyGallery imgSrc={props.imgSrc[imgIndex]} /> */}
 
       {/* left arrow */}
       <button
         onClick={handleClickPrevBtn}
-        className="bg-white absolute top-1/2  left-3  h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full cursor-pointer tap-transparent "
+        disabled={imgIndex === 0}
+        // className="bg-white absolute top-1/2 left-3  h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full cursor-pointer tap-transparent "
+        className={`${
+          imgIndex === 0 ? "hidden" : ""
+        }  bg-white absolute top-1/2 left-3  h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full cursor-pointer tap-transparent`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +73,11 @@ const ListingHeader = (props: Props) => {
       {/* right arrow */}
       <button
         onClick={handleClickNextBtn}
-        className="bg-white absolute top-1/2  right-3 h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full cursor-pointer tap-transparent"
+        disabled={imgIndex === 4}
+        // className="bg-white absolute top-1/2  right-3 h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full cursor-pointer tap-transparent"
+        className={`${
+          imgIndex === 4 ? "hidden" : ""
+        }  opacity-40 hover:opacity-100 bg-white  absolute top-1/2  right-3  h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full cursor-pointer tap-transparent`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -115,13 +126,17 @@ const ListingHeader = (props: Props) => {
         <img
           src={props.hostSrc}
           alt="host logo"
-          className="h-[40px] w-[40px] bg-inherit rounded-full cursor-pointer colo "
+          className="h-[40px] w-[40px] bg-inherit rounded-full cursor-pointer"
         />
       </div>
 
-      <div className="absolute bottom-2 text-white font-bold cursor-pointer  tap-transparent">
-        <div>* * * * *</div>
-      </div>
+      <ul className="absolute bottom-5 flex gap-2 cursor-pointer tap-transparent">
+        <li className="w-[10px] h-[10px] border-[2px] border-[#dad4d4] hover:border-white rounded-lg bg-[#dad4d4] hover:bg-white "></li>
+        <li className="w-[10px] h-[10px] border-[2px] border-[#dad4d4] hover:border-white rounded-lg bg-[#dad4d4] hover:bg-white "></li>
+        <li className="w-[10px] h-[10px] border-[2px] border-[#dad4d4] hover:border-white rounded-lg bg-[#dad4d4] hover:bg-white "></li>
+        <li className="w-[10px] h-[10px] border-[2px] border-[#dad4d4] hover:border-white rounded-lg bg-[#dad4d4] hover:bg-white "></li>
+        <li className="w-[10px] h-[10px] border-[2px] border-[#dad4d4] hover:border-white rounded-lg bg-[#dad4d4] hover:bg-white "></li>
+      </ul>
     </div>
   );
 };

@@ -29,7 +29,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/components/mockData/slider.tsx",
-    "src/components/homePage/header"
+    "src/components/homePage/header",
+    "src/components/slider-library/rightNav.tsx"
   ],
   "exclude": ["node_modules"]
 }

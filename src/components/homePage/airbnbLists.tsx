@@ -2,7 +2,7 @@ import React from "react";
 import ListingHeader from "./listingCardHeader";
 import ListingCardText from "./listingCardText";
 import { ListingCardData } from "../mockData/listingCardData";
-import ImageSlider from "../mockData/slider";
+import { MyGallery } from "../slider-library/reactImageGallery";
 
 const AirbnbLists = () => {
   return (
@@ -10,9 +10,10 @@ const AirbnbLists = () => {
       {ListingCardData.map((i) => (
         <div
           key={i.id}
-          className="w-[270px] max-w-[420px] sm:w-[auto] h-[auto] flex flex-col mb-[16px]"
+          className="min-w-[270px] max-w-[376px] sm:w-[auto] h-[auto] flex flex-col mb-[16px]"
         >
           <ListingHeader hostSrc={i.hostSrc} imgSrc={i.imgSrc} />
+
           <ListingCardText
             location={i.location}
             rating={i.rating}
@@ -25,7 +26,6 @@ const AirbnbLists = () => {
           />
         </div>
       ))}
-      <ImageSlider />
     </div>
   );
 };

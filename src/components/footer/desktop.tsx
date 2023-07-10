@@ -54,7 +54,7 @@ const Desktop = () => {
         </div>
       )}
 
-      <div className="relative z-20 bg-white h-auto border-t-[1px] border-[#dddddd] py-3 px-10 xl:px-12 2xl:px-20 hidden md:flex flex-row items-center md:justify-center lg:justify-between xl:justify-between flex-wrap gap-[5px] text-[#222222] text-sm">
+      <div className="relative z-20 bg-white h-auto border-t-[1px] border-[#dddddd] py-3 px-10 md:px-10 xl-px-12 xxl:px-20 2xl:px-20 hidden md:flex flex-row items-center md:justify-center lg:justify-between xl:justify-between flex-wrap gap-[5px] text-[#222222] text-sm">
         <div className="flex font-light gap-4 ">
           <span>&copy; 2023 Airbnb, Inc.</span>
 
