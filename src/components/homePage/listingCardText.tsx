@@ -34,12 +34,12 @@ const ListingCardText = (props: Props) => {
         </span>
       </div>
       <div className="flex flex-col leading-[21px] ">
-        <p className="flex flex-wrap overflow-hidden truncate text-[#717171]">
+        <div className="flex flex-wrap overflow-hidden truncate text-[#717171]">
           Stay with {props.hostName}
           <li className="ml-2  list-disc">
             <span className="-ml-2">{props.occupation} </span>{" "}
           </li>
-        </p>
+        </div>
         <p className="overflow-clip text-[#717171]">
           {props.nights} nights * {props.dateFrom} - {props.dateTo}
         </p>

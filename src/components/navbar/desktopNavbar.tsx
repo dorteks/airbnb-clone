@@ -15,7 +15,6 @@ const DesktopNavbar = () => {
             height={34}
           />
           <Image
-            // className="flex pb-[2px]"
             className="hidden lg:flex pb-[2px]"
             src="/assets/airbnb-text.jpg"
             alt=""

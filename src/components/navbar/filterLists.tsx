@@ -10,7 +10,6 @@ const FilterLists = () => {
       left: -filterRef.current?.offsetWidth,
       behavior: "smooth",
     });
-    console.log("prev clicked");
   };
 
   const handleNext = () => {
@@ -18,16 +17,33 @@ const FilterLists = () => {
       left: filterRef.current?.offsetWidth,
       behavior: "smooth",
     });
-    console.log("next clicked");
   };
 
   return (
     <div className="relative bg-white flex w-full mx-auto px-6 md:px-10 xxl:px-20 2xl:px-20 items-center gap-2 border-white border-[1px] border-b-[#ededed] md:border-none cursor-pointer tap-transparent">
-      {/* border-b-[1px] border-[#ededed] */}
+      {/* prev button */}
+      <button
+        onClick={handlePrev}
+        className={`${
+          handlePrev == null ? "md:hidden" : ""
+        } mt-4 hidden md:flex h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full shadow-lg shadow-[inherit] hover:shadow-[#202020]`}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+          aria-hidden="true"
+          role="presentation"
+          focusable="false"
+          className="block fill-none h-3 w-3 stroke-[#222222] stroke-[2px] overflow-visible"
+        >
+          <path fill="none" d="M20 28 8.7 16.7a1 1 0 0 1 0-1.4L20 4"></path>
+        </svg>
+      </button>
+
       <div
         ref={filterRef}
         style={{ transform: "translateX(0)" }}
-        className="overflow-hidden mt-2 md:mt-5 h-[74px] md:h-[78px] top-[80px] flex items-center gap-[34px]"
+        className="overflow-x-scroll no-scrollbar  mt-2 md:mt-5 h-[74px] md:h-[78px] top-[80px] flex items-center gap-[34px]"
       >
         {[
           {
@@ -145,9 +161,8 @@ const FilterLists = () => {
       </div>
 
       {/* next button*/}
-      <div
+      <button
         onClick={handleNext}
-        // disabled={handleNext === null}
         className="mt-4 hidden md:flex h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full shadow-lg shadow-[inherit] hover:shadow-[#202020]"
       >
         <svg
@@ -160,25 +175,7 @@ const FilterLists = () => {
         >
           <path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path>
         </svg>
-      </div>
-
-      {/* prev button */}
-      <div
-        onClick={handlePrev}
-        // disabled={handlePrev === null}
-        className="mt-4 hidden md:flex h-[28px] p-[7px] border-[1px] border-[#717171] rounded-full shadow-lg shadow-[inherit] hover:shadow-[#202020]"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 32 32"
-          aria-hidden="true"
-          role="presentation"
-          focusable="false"
-          className="block fill-none h-3 w-3 stroke-[#222222] stroke-[2px] overflow-visible"
-        >
-          <path fill="none" d="M20 28 8.7 16.7a1 1 0 0 1 0-1.4L20 4"></path>
-        </svg>
-      </div>
+      </button>
 
       <button className="hidden md:flex py-2 min-w-[91px] h-[48px] mt-4 items-center bg-[#00000000] border-[1px] border-[#dddddd] rounded-[12px] text-xs font-extrabold ">
         <div className="flex px-4 py-[1px] gap-2">
