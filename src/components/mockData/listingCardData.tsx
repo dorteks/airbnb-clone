@@ -1,15 +1,13 @@
 export const ListingCardData = [
   {
     id: 1,
-    images: [
-      "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
-      "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
+    imgSrc: [
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
-      "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
-      "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/7da9fd6a-8d6c-4954-88b0-1fc52abc9cfd.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/41cbfe4c-56b1-4a67-8365-47a5894816a4.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/41cbfe4c-56b1-4a67-8365-47a5894816a4.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/070adfcb-5350-4ddf-afb0-368f963c38f0.jpeg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/b9c551db-9203-4f2c-9572-216ebe07e25c.jpg?im_w=240",
     location: "5 bedroom Duplex, Ajah",
@@ -23,15 +21,14 @@ export const ListingCardData = [
   },
   {
     id: 2,
-    images: [
-      "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
-      "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
-      "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
-      "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
-      "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-47025046/original/4d713a1e-ab4c-4d70-905f-d24b4042189f.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-47025046/original/7f98dcc6-18f9-4cf6-8f83-798c20f1ba7f.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-47025046/original/fa670b4e-cb55-470b-a84c-ffc4b9422710.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-47025046/original/fb0b52c5-ffbf-400d-b41a-bb656eb47468.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-47025046/original/b6beeabe-6cb5-4020-a55f-0609c5c980a2.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-47025046/original/fa4c12ff-8d49-443e-82d6-ef945bff5d22.jpeg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/3816a6ef-5cc9-40ed-ae47-406646daa103.jpg?im_w=720",
     location: "4 bedroom Apartment, Abuja",
@@ -45,15 +42,14 @@ export const ListingCardData = [
   },
   {
     id: 3,
-    images: [
-      "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
-      "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
+    imgSrc: [
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
-      "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
-      "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-546923400311446203/original/4c43b516-a11b-49bb-a2ed-d4b0c8cc34a5.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-546923400311446203/original/239adad6-2478-45c8-9c9b-bd3527b792ff.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-546923400311446203/original/2332cde9-89bb-46d5-b803-a1f91e7e12d9.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-546923400311446203/original/02eb20aa-6f28-4204-a91a-a125878d027f.jpeg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/a910392f-02d4-4ed0-96a9-52d6ee997cc1.jpg?im_w=720",
     location: "4 bedroom Apartment, Lekki",
@@ -67,15 +63,14 @@ export const ListingCardData = [
   },
   {
     id: 4,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/f7c1bf25-b192-4568-9c13-133c374b2b1f.jpg?im_w=720",
     location: "4 bedroom Duplex, Banana Island",
@@ -89,15 +84,14 @@ export const ListingCardData = [
   },
   {
     id: 5,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/0ab69fcf-c6fa-4cd4-a272-8755b6e88d7c.jpg?im_w=720",
     location: "3 bedroom Duplex, Abija",
@@ -111,15 +105,14 @@ export const ListingCardData = [
   },
   {
     id: 6,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/prohost-api/Hosting-34444025/original/cae4b265-0ab6-4993-9eef-0274b187b116.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/prohost-api/Hosting-34444025/original/cae4b265-0ab6-4993-9eef-0274b187b116.jpeg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/82130759-fbba-4012-ac60-51d5b0e4801e.jpg?im_w=720",
     location: "3 bedroom Apartment, Ikeja",
@@ -133,15 +126,14 @@ export const ListingCardData = [
   },
   {
     id: 7,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-49840035/original/e7496a4a-3cac-444f-8858-15bff633bd42.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/miso/Hosting-49840035/original/e7496a4a-3cac-444f-8858-15bff633bd42.jpeg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/2fc5b633-2583-4eea-8908-a12f38bb47a5.jpg?im_w=720",
     location: "3 bedroom Duplex, Banana Island",
@@ -155,15 +147,14 @@ export const ListingCardData = [
   },
   {
     id: 8,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/7fb0732b-4fd1-44cf-8600-46deb28ce3cd.jpg?im_w=720",
     location: "5 bedroom Apartment, Lekki I",
@@ -178,15 +169,15 @@ export const ListingCardData = [
 
   {
     id: 9,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-49840035/original/e7496a4a-3cac-444f-8858-15bff633bd42.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/miso/Hosting-49840035/original/e7496a4a-3cac-444f-8858-15bff633bd42.jpeg?im_w=720",
+
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/63f2c383-900f-4c0a-a834-2f8ff941c8a1.jpg?im_w=720",
     location: "3 bedroom Duplex, Sokoto",
@@ -200,15 +191,14 @@ export const ListingCardData = [
   },
   {
     id: 10,
-    images: [
+    imgSrc: [
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/8daeb070-e9f1-40f1-a0c2-fb90682483d3.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/8daeb070-e9f1-40f1-a0c2-fb90682483d3.jpg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/User-446553430/original/a853d570-7c29-4e26-b38c-b15c2f89d9e7.jpeg?im_w=720",
     location: "1 room Self Contain, Egbeda",
@@ -222,15 +212,14 @@ export const ListingCardData = [
   },
   {
     id: 11,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/5bd8b657-4daa-49f2-8a6e-7891bf32972b.jpg?im_w=720",
     location: "Mini Flat, Ikeja",
@@ -244,15 +233,14 @@ export const ListingCardData = [
   },
   {
     id: 12,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/7da9fd6a-8d6c-4954-88b0-1fc52abc9cfd.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/f192135e-4df8-4d86-9cda-8e4c72fc5d93.jpg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/f9edeea8-4f4b-44e3-bf06-981455370526.jpg?im_w=720",
     location: "4 bedroom Duplex, Minna",
@@ -266,15 +254,14 @@ export const ListingCardData = [
   },
   {
     id: 13,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-49924321/original/cc3a98b7-d83e-4684-bb03-2b2ce6dd480d.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
-      "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/miso/Hosting-49924321/original/cc3a98b7-d83e-4684-bb03-2b2ce6dd480d.jpeg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/a48c28b3-cafc-4ee1-ac52-e089e34baeda.jpg?im_w=720",
     location: "1 room Self Contain (5 units), Ikeja",
@@ -288,15 +275,14 @@ export const ListingCardData = [
   },
   {
     id: 14,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/prohost-api/Hosting-616473242380750899/original/69d9953b-f58b-4942-8374-d856c1d26cd8.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
-      "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/prohost-api/Hosting-616473242380750899/original/69d9953b-f58b-4942-8374-d856c1d26cd8.jpeg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/acd97bc9-42f7-45cf-84d4-076add17e41a.jpg?im_w=720",
     location: "3 bedrrom Apartment, Lekki",
@@ -310,21 +296,20 @@ export const ListingCardData = [
   },
   {
     id: 15,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/7da9fd6a-8d6c-4954-88b0-1fc52abc9cfd.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/8daeb070-e9f1-40f1-a0c2-fb90682483d3.jpg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/7869c2e8-590b-48fa-9f7b-25dfb6c9fd8c.jpg?im_w=720",
     location: "3 bedroom Duplex, Ajah",
     rating: "4.8",
     hostName: "Marianne",
-    occupation: "I am self employed",
+    occupation: "Self employed",
     nights: "5",
     dateFrom: "Aug 25",
     dateTo: "30",
@@ -332,15 +317,14 @@ export const ListingCardData = [
   },
   {
     id: 16,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/b9c551db-9203-4f2c-9572-216ebe07e25c.jpg?im_w=240",
     location: "5 bedroom Duplex, Ajah",
@@ -354,15 +338,14 @@ export const ListingCardData = [
   },
   {
     id: 17,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/3816a6ef-5cc9-40ed-ae47-406646daa103.jpg?im_w=720",
     location: "4 bedroom Apartment, Abuja",
@@ -376,15 +359,14 @@ export const ListingCardData = [
   },
   {
     id: 18,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/a910392f-02d4-4ed0-96a9-52d6ee997cc1.jpg?im_w=720",
     location: "4 bedroom Apartment, Lekki",
@@ -398,15 +380,14 @@ export const ListingCardData = [
   },
   {
     id: 19,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/f7c1bf25-b192-4568-9c13-133c374b2b1f.jpg?im_w=720",
     location: "4 bedroom Duplex, Banana Island",
@@ -420,15 +401,14 @@ export const ListingCardData = [
   },
   {
     id: 20,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/0ab69fcf-c6fa-4cd4-a272-8755b6e88d7c.jpg?im_w=720",
     location: "3 bedroom Duplex, Abija",
@@ -442,15 +422,14 @@ export const ListingCardData = [
   },
   {
     id: 21,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/prohost-api/Hosting-34444025/original/cae4b265-0ab6-4993-9eef-0274b187b116.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/prohost-api/Hosting-34444025/original/cae4b265-0ab6-4993-9eef-0274b187b116.jpeg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/82130759-fbba-4012-ac60-51d5b0e4801e.jpg?im_w=720",
     location: "3 bedroom Apartment, Ikeja",
@@ -464,15 +443,14 @@ export const ListingCardData = [
   },
   {
     id: 22,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-49840035/original/e7496a4a-3cac-444f-8858-15bff633bd42.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/miso/Hosting-49840035/original/e7496a4a-3cac-444f-8858-15bff633bd42.jpeg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/2fc5b633-2583-4eea-8908-a12f38bb47a5.jpg?im_w=720",
     location: "3 bedroom Duplex, Banana Island",
@@ -486,15 +464,14 @@ export const ListingCardData = [
   },
   {
     id: 23,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/7fb0732b-4fd1-44cf-8600-46deb28ce3cd.jpg?im_w=720",
     location: "5 bedroom Apartment, Lekki I",
@@ -509,15 +486,14 @@ export const ListingCardData = [
 
   {
     id: 24,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-49840035/original/e7496a4a-3cac-444f-8858-15bff633bd42.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/miso/Hosting-49840035/original/e7496a4a-3cac-444f-8858-15bff633bd42.jpeg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/63f2c383-900f-4c0a-a834-2f8ff941c8a1.jpg?im_w=720",
     location: "3 bedroom Duplex, Sokoto",
@@ -531,15 +507,14 @@ export const ListingCardData = [
   },
   {
     id: 25,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/41cbfe4c-56b1-4a67-8365-47a5894816a4.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/8daeb070-e9f1-40f1-a0c2-fb90682483d3.jpg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/User-446553430/original/a853d570-7c29-4e26-b38c-b15c2f89d9e7.jpeg?im_w=720",
     location: "1 room Self Contain, Egbeda",
@@ -553,15 +528,14 @@ export const ListingCardData = [
   },
   {
     id: 26,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/5bd8b657-4daa-49f2-8a6e-7891bf32972b.jpg?im_w=720",
     location: "Mini Flat, Ikeja",
@@ -575,15 +549,14 @@ export const ListingCardData = [
   },
   {
     id: 27,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-546923400311446203/original/4c43b516-a11b-49bb-a2ed-d4b0c8cc34a5.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/f192135e-4df8-4d86-9cda-8e4c72fc5d93.jpg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/f9edeea8-4f4b-44e3-bf06-981455370526.jpg?im_w=720",
     location: "4 bedroom Duplex, Minna",
@@ -597,15 +570,14 @@ export const ListingCardData = [
   },
   {
     id: 28,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-49924321/original/cc3a98b7-d83e-4684-bb03-2b2ce6dd480d.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
-      "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/miso/Hosting-49924321/original/cc3a98b7-d83e-4684-bb03-2b2ce6dd480d.jpeg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/a48c28b3-cafc-4ee1-ac52-e089e34baeda.jpg?im_w=720",
     location: "1 room Self Contain (5 units), Ikeja",
@@ -619,15 +591,14 @@ export const ListingCardData = [
   },
   {
     id: 29,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-546923400311446203/original/4c43b516-a11b-49bb-a2ed-d4b0c8cc34a5.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/prohost-api/Hosting-616473242380750899/original/69d9953b-f58b-4942-8374-d856c1d26cd8.jpeg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/acd97bc9-42f7-45cf-84d4-076add17e41a.jpg?im_w=720",
     location: "3 bedrrom Apartment, Lekki",
@@ -641,21 +612,20 @@ export const ListingCardData = [
   },
   {
     id: 30,
-    images: [
+    imgSrc: [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/41cbfe4c-56b1-4a67-8365-47a5894816a4.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/fedfd719-db8e-4c1c-aef6-f89ae0703cbb.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/42765c15-00bd-443b-9111-c13336bc2665.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=720",
     ],
-    imgSrc:
-      "https://a0.muscache.com/im/pictures/8daeb070-e9f1-40f1-a0c2-fb90682483d3.jpg?im_w=720",
     hostSrc:
       "https://a0.muscache.com/im/pictures/user/7869c2e8-590b-48fa-9f7b-25dfb6c9fd8c.jpg?im_w=720",
     location: "3 bedroom Duplex, Ajah",
     rating: "4.8",
     hostName: "Marianne",
-    occupation: "I am self employed",
+    occupation: "Self employed",
     nights: "5",
     dateFrom: "Aug 25",
     dateTo: "30",

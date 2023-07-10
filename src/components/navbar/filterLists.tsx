@@ -22,7 +22,7 @@ const FilterLists = () => {
   };
 
   return (
-    <div className="relative bg-white flex w-full mx-auto px-6 md:px-10 2xl:px-20 items-center gap-2 border-white border-[1px] border-b-[#ededed] md:border-none cursor-pointer tap-transparent">
+    <div className="relative bg-white flex w-full mx-auto px-6 md:px-10 xxl:px-20 2xl:px-20 items-center gap-2 border-white border-[1px] border-b-[#ededed] md:border-none cursor-pointer tap-transparent">
       {/* border-b-[1px] border-[#ededed] */}
       <div
         ref={filterRef}
@@ -134,7 +134,7 @@ const FilterLists = () => {
           <div
             key={i.id}
             onClick={() => console.log("Clicked")}
-            className="flex flex-wrap gap-[8px] flex-grow items-center justify-center cursor-pointer text-[#717171] hover:text-[#000000] py-[13px] md:py-[16px] border-b-[10px]  sm:border-b-[5px] border-[white] hover:border-b-red-500 hover:sm:border-[#00000049]"
+            className="flex flex-wrap gap-[8px] flex-grow items-center justify-center cursor-pointer text-[#717171] hover:text-[#000000] py-[13px] md:py-[16px] border-b-[6px]  sm:border-b-[5px] border-[white] hover:border-b-[#00000049] hover:sm:border-[#00000049]"
           >
             <img alt="icon" width={24} height={24} src={i.icon} className="" />
             <h4 className="text-center text-xs font-medium whitespace-nowrap ">

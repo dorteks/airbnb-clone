@@ -7,10 +7,20 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
-  .click-transparent {
-    opacity: 1;
+  .transition-ease {
+    transition: transform 0.3s ease;
+  }
+
+  .transform-animation {
+    transform: translate(-20%);
+  }
+
+  .transition-all {
+    transition: all 0.5s;
   }
 }
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
 
 @font-face {
   font-family: "cereal-normal";
