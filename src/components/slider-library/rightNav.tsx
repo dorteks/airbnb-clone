@@ -28,4 +28,6 @@ const RightNav = React.memo((props: Props) => {
   );
 });
 
+RightNav.displayName = "RightNav";
+
 export default RightNav;
