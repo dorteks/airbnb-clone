@@ -12,7 +12,7 @@ const Mobile = () => {
   return (
     <div className="flex flex-col gap-9">
       {!map ? (
-        <div className="flex absolute bottom-24 md:hidden self-center text-[#FFFFFF] bg-[#000000] w-auto rounded-full tap-transparent">
+        <div className="flex absolute bottom-20 md:hidden self-center text-[#FFFFFF] bg-[#000000] w-auto rounded-full tap-transparent">
           <button
             onClick={toggleMap}
             className="flex gap-2 items-center justify-center px-5 py-[11px] text-sm font-semibold "
@@ -31,7 +31,7 @@ const Mobile = () => {
           </button>
         </div>
       ) : (
-        <div className="flex absolute bottom-24 md:hidden self-center text-[#FFFFFF] bg-[#000000] w-auto rounded-full tap-transparent">
+        <div className="flex absolute bottom-20 md:hidden self-center text-[#FFFFFF] bg-[#000000] w-auto rounded-full tap-transparent">
           <button
             onClick={toggleMap}
             className="flex gap-2 items-center justify-center px-5 py-[11px] text-sm font-semibold "

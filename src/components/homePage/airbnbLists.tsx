@@ -2,7 +2,6 @@ import React from "react";
 import ListingHeader from "./listingCardHeader";
 import ListingCardText from "./listingCardText";
 import { ListingCardData } from "../mockData/listingCardData";
-import { MyGallery } from "../slider-library/reactImageGallery";
 
 const AirbnbLists = () => {
   return (

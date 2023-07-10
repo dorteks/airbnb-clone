@@ -2,26 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .tap-transparent {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-
-  .transition-ease {
-    transition: transform 0.3s ease;
-  }
-
-  .transform-animation {
-    transform: translate(-20%);
-  }
-
-  .transition-all {
-    transition: all 0.5s;
-  }
-}
-
-@import "~react-image-gallery/styles/css/image-gallery.css";
-
 @font-face {
   font-family: "cereal-normal";
   src: url("/fonts/Cereal-Normal.woff2") format("woff2");
@@ -39,3 +19,38 @@
   src: url("/fonts/Cereal-Bold.woff2") format("woff2");
   font-weight: bold;
 }
+
+@layer base {
+  html {
+    font-family: Cereal-normal, -apple-system, BlinkMacSystemFont, Roboto,
+      Helvetica Neue, sans-serif;
+  }
+}
+
+@layer utilities {
+  .tap-transparent {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  .transition-ease {
+    transition: transform 0.3s ease;
+  }
+
+  .transform-animation {
+    transform: translate(-20%);
+  }
+
+  .transition-all {
+    transition: all 0.5s;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+@import "~react-image-gallery/styles/css/image-gallery.css";

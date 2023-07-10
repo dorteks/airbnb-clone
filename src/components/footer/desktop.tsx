@@ -14,7 +14,7 @@ const Desktop = () => {
       {!map ? (
         <div
           onClick={toggleMap}
-          className="hidden absolute bottom-32 md:flex self-center text-[#FFFFFF] bg-[#000000] w-auto rounded-full"
+          className="hidden absolute bottom-20 md:flex self-center text-[#FFFFFF] bg-[#000000] w-auto rounded-full"
         >
           <button className="flex gap-2 items-center justify-center px-5 py-[14px] text-sm font-semibold cursor-pointer ">
             Show Map
@@ -33,7 +33,7 @@ const Desktop = () => {
       ) : (
         <div
           onClick={toggleMap}
-          className="hidden absolute bottom-32 md:flex self-center text-[#FFFFFF] bg-[#000000] w-auto rounded-full"
+          className="hidden absolute bottom-20 md:flex self-center text-[#FFFFFF] bg-[#000000] w-auto rounded-full"
         >
           <button className="flex gap-2 items-center justify-center px-5 py-[14px] text-sm font-semibold cursor-pointer ">
             Show List
