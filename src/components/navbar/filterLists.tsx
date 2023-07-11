@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 const FilterLists = () => {
   const filterRef = useRef<HTMLDivElement | null>(null);
@@ -149,8 +149,8 @@ const FilterLists = () => {
         ].map((i) => (
           <div
             key={i.id}
-            onClick={() => console.log("Clicked")}
-            className="flex flex-wrap gap-[8px] flex-grow items-center justify-center cursor-pointer text-[#717171] hover:text-[#000000] py-[13px] md:py-[16px] border-b-[6px]  sm:border-b-[5px] border-[white] hover:border-b-[#00000049] hover:sm:border-[#00000049]"
+            onClick={() => console.log("clicked")}
+            className="flex flex-wrap gap-[8px] flex-grow items-center justify-center cursor-pointer text-[#717171] hover:text-[#000000] py-[13px] md:py-[16px] border-b-[6px]  sm:border-b-[5px] border-[white]  hover:border-b-[#00000049] hover:sm:border-[#00000049]"
           >
             <img alt="icon" width={24} height={24} src={i.icon} className="" />
             <h4 className="text-center text-xs font-medium whitespace-nowrap ">
